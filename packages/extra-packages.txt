@@ -1,0 +1,27 @@
+# Extra GUI applications (not in the current Omarchy base package list)
+alacritty
+discord
+openai-codex-desktop
+openlens-bin
+signal-desktop
+slack-desktop
+spotify
+typora
+visual-studio-code-bin
+voxtype-bin
+
+# Extra development and cloud tooling
+azure-cli
+dotnet-runtime-9.0
+dotnet-sdk-8.0
+gcc-fortran
+github-cli
+helm
+k6
+kind
+kubectl-bin
+ollama-cuda
+rust
+xmlstarlet
+yarn
+

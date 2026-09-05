@@ -26,10 +26,15 @@ while IFS= read -r -d '' source; do
   link_file "$source" "$target"
 done < <(find "$repo_dir" -type f \
   ! -path "$repo_dir/.git/*" \
+  ! -path "$repo_dir/packages/*" \
   ! -name 'README.md' \
   ! -name 'install.sh' \
   ! -path "$repo_dir/git/config.example" \
   -print0)
+
+if [[ -f "$repo_dir/mise/config.toml" ]]; then
+  link_file "$repo_dir/mise/config.toml" "${XDG_CONFIG_HOME:-$HOME/.config}/mise/config.toml"
+fi
 
 echo "Configuration linked from $repo_dir"
 echo "Review hypr/monitors.lua for machine-specific display settings."

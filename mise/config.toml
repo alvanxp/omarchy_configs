@@ -1,0 +1,11 @@
+[tools]
+claude = "latest"
+codex = "latest"
+dotnet = "latest"
+gemini = { version = "latest", allow_builds = ["@github/keytar", "node-pty"] }
+gh = "latest"
+go = "latest"
+node = "25.9.0"
+opencode = "latest"
+python = "latest"
+
