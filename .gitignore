@@ -1,0 +1,8 @@
+# Machine-specific and generated files
+*.bak*
+nohup.out
+.DS_Store
+
+# Never commit credentials or local identity
+git/config
+
